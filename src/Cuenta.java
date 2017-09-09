@@ -12,4 +12,9 @@ public class Cuenta {
 		// TODO Auto-generated method stub
 		return saldo;
 	}
+	
+	public void depositar(int monto) {
+		if(monto >= 0)
+			saldo += monto;
+	}
 }
