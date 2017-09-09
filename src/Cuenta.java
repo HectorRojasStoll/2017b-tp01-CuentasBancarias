@@ -18,11 +18,11 @@ public class Cuenta {
 			saldo += monto;
 	}
 
-	public void TransferirA(Cuenta cuentaDestino, int monto) {
+	public void TransferirMontoHacia(Cuenta cuentaDeDestino, int monto) {
 		if(monto <= saldo)
 			saldo -= monto;
 		
-		cuentaDestino.saldo += monto;
+		cuentaDeDestino.saldo += monto;
 		
 	}
 }

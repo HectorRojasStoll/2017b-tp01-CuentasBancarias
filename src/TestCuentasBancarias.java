@@ -20,11 +20,11 @@ public class TestCuentasBancarias {
 	
 	@Test
 	public void TestTransferirA(){
-		Cuenta cuentaOrigen = new Cuenta();
-		Cuenta cuentaDestino = new Cuenta();
+		Cuenta cuentaDeOrigen = new Cuenta();
+		Cuenta cuentaDeDestino = new Cuenta();
 		int monto = 5;
-		cuentaOrigen.TransferirA(cuentaDestino, monto);
-		Assert.assertEquals(5, cuentaDestino.getSaldo());
+		cuentaDeOrigen.TransferirMontoHacia(cuentaDeDestino, monto);
+		Assert.assertEquals(5, cuentaDeDestino.getSaldo());
 		
 		
 	}
