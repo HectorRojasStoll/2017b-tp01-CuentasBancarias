@@ -17,4 +17,15 @@ public class TestCuentasBancarias {
 		cuenta.depositar(10);
 		Assert.assertEquals(10, cuenta.getSaldo());
 	}
+	
+	@Test
+	public void TestTransferirA(){
+		Cuenta cuentaOrigen = new Cuenta();
+		Cuenta cuentaDestino = new Cuenta();
+		int monto = 5;
+		cuentaOrigen.TransferirA(cuentaDestino, monto);
+		Assert.assertEquals(5, cuentaDestino.getSaldo());
+		
+		
+	}
 }
