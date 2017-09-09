@@ -17,4 +17,12 @@ public class Cuenta {
 		if(monto >= 0)
 			saldo += monto;
 	}
+
+	public void TransferirA(Cuenta cuentaDestino, int monto) {
+		if(monto <= saldo)
+			saldo -= monto;
+		
+		cuentaDestino.saldo += monto;
+		
+	}
 }
